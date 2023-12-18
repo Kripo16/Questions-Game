@@ -1,4 +1,30 @@
 // script.js
+document.addEventListener('DOMContentLoaded', function () {
+    // Show the heart-shaped loader
+    showHeartLoader();
+
+    // ... (existing code)
+
+    // Hide the heart-shaped loader and show the page content after a delay
+    setTimeout(function () {
+        hideHeartLoader();
+        // Your existing code to show the page content goes here
+    }, 1000); // 1000 milliseconds (1 second) delay, adjust as needed
+});
+
+function showHeartLoader() {
+    const heartLoader = document.getElementById('heartLoader');
+    heartLoader.style.opacity = '1';
+}
+
+function hideHeartLoader() {
+    const heartLoader = document.getElementById('heartLoader');
+    heartLoader.style.opacity = '0';
+    // Hide the heart-shaped loader after the fade-out animation
+    setTimeout(function () {
+        heartLoader.remove()
+    }, 500); // Adjust the duration of the fade-out animation
+}
 function showQuestions(topic) {
     document.getElementById("popupTitle").innerHTML = topic + " Questions";
     
