@@ -27,17 +27,22 @@
             <h2 id="popupTitle"></h2>
             <p id="popupContent"></p>
         </div>
-        <!-- Add the audio element without autoplay -->
-        <audio id="sound" controls>
-            <source src="media/audio.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-
-        <!-- Add a button with a play symbol -->
-        <button id="playButton" onclick="playAudio()" class="play-button">
-            <span>&#9654;</span> Play
-        </button>
     </div>
+    <!-- index.html -->
+<!-- ... (existing code) -->
+        <button  onclick="showLips()">MWAH</button>
+        <!-- Add the audio element without autoplay -->
+    <audio id="sound">
+        <source src="media/audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Add a button with a play symbol -->
+    <button id="playButton" onclick="playAudio()" class="play-button">
+        <span>&#9654;</span> Play
+    </button>
+
+
 
     <script src="script.js"></script>
 </body>
