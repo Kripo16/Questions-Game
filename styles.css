@@ -57,7 +57,6 @@ body {
     color: #555;
 }
 button {
-    position: fixed;
     margin-top: auto; /* Push the button to the bottom */
     margin-bottom: 20px; /* Add some space between the button and other elements */
     padding: 15px 30px; /* Increase padding for the button */
@@ -76,6 +75,7 @@ button:active {
     transform: scale(0.95); /* Add a slight scale effect */
 }
 .play-button {
+    position: fixed;
     bottom: 0px; /* Adjust this value to control the distance from the bottom */
     left: 10px; /* Adjust this value to control the distance from the left */
     background-color: #e74c3c;
